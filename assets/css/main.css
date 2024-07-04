@@ -110,6 +110,7 @@ input, select, textarea {
 	.dark {
 		color: #aaa;
 		color: rgba(255, 255, 255, 0.65);
+		text-shadow: 2px 2px 2px black;
 	}
 
 	input, textarea, select {
@@ -135,6 +136,7 @@ input, select, textarea {
 
 	.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
 		color: #fff;
+		text-shadow: 2px 2px 2px black;
 	}
 
 	strong, b {
@@ -145,6 +147,7 @@ input, select, textarea {
 	.dark strong, .dark b {
 		color: #fff;
 		color: rgba(255, 255, 255, 0.85);
+		ext-shadow: 2px 2px 2px black;
 	}
 
 	em, i {
@@ -168,6 +171,7 @@ input, select, textarea {
 	.dark a {
 		color: #fff;
 		border-bottom-color: rgba(255, 255, 255, 0.5);
+		ext-shadow: 2px 2px 2px black;
 	}
 
 		.dark a:hover {
@@ -210,8 +214,13 @@ input, select, textarea {
 		margin-bottom: 1em;
 	}
 
+	th, td {
+	    border: 1px solid black;
+	    border-collapse: collapse;
+	}
+
 	p {
-		text-align: justify;
+		text-align: center;
 	}
 
 	header {
@@ -251,6 +260,13 @@ input, select, textarea {
 		max-width: 100%;
 		width: 1360px;
 	}
+
+
+		.container.h1 {
+			font-size: 2.25em;
+			line-height: 1.25em;
+			margin-bottom: 0;
+		}
 
 		.container.medium {
 			width: 1020px;
@@ -2179,7 +2195,7 @@ input, select, textarea {
 
 /* Header */
 
-	#header {
+ 	#header {
 		position: relative;
 		margin: 0;
 		background-image: url("images/overlay.png"), url("../../images/header.jpg");
@@ -2219,6 +2235,7 @@ input, select, textarea {
 
 		.main > header {
 			background: #fff;
+			ext-shadow: 2px 2px 2px black;
 			text-align: center;
 			padding: 5em 0 5em 0;
 			margin: 0;
@@ -2238,10 +2255,15 @@ input, select, textarea {
 
 		.main > .content {
 			padding: 6em 0 6em 0;
+			text-align: center;
 		}
 
 			.main > .content h3 {
-				font-size: 1.5em;
+				font-size: 2.3em;
+			}
+			.main > .content h4 {
+			    font-size: 1.5em;
+			    text-align: justify;
 			}
 
 			.main > .content.dark {
@@ -2263,6 +2285,10 @@ input, select, textarea {
 			.main > .content.style4 {
 				padding-top: 0;
 				background: #fff;
+			}
+
+			.main > .content.style5 {
+				background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #1a1418, #373959, #2f394e);
 			}
 
 /* Footer */
