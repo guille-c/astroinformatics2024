@@ -2291,6 +2291,15 @@ input, select, textarea {
 				background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #1a1418, #373959, #2f394e);
 			}
 
+			.main > .content.style6 {
+				background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #1a1418, #373959, #2f394e);
+			}
+			.main > .content.style6 table {
+			    border-collapse: separate;
+			    border-spacing: 0 2em; /* Adds 15px of vertical space between rows */
+			    width: 100%;
+			    line-height: 1.2;
+			}
 /* Footer */
 
 	#footer {
